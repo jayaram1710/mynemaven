@@ -24,10 +24,5 @@ pipeline
                 sh 'scp /home/ubuntu/.jenkins/workspace/DeclarativePipeline/webapp/target/webapp.war ubuntu@172.31.80.99:/var/lib/tomcat9/webapps/newtestapp.war'
             }
         }
-            steps
-            {
-                 sh 'scp /home/ubuntu/.jenkins/workspace/DeclarativePipeline/webapp/target/webapp.war ubuntu@172.31.93.5:/var/lib/tomcat9/webapps/newprodapp.war'
-            }
-        }
     }
 }
